@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import TaskInput from './components/TaskInput/TaskInput'
-import TaskFilter from './components/TaskFilter/TaskFilter'
-import TaskList from './components/TaskList/TaskList'
+import TaskInput from './components/TaskInput'   // <-- J'ai enlevé la répétition /TaskInput
+import TaskFilter from './components/TaskFilter' // <-- Pareil ici
+import TaskList from './components/TaskList'     // <-- Et ici
 import './index.css'
 
 function App() {
