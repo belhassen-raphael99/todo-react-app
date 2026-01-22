@@ -30,6 +30,7 @@ function TaskItem({ task, onToggle, onDelete, onEdit }) {
         <div className={styles.item}>
             <input
                 type="checkbox"
+                className={styles.checkbox}
                 checked={task.completed}
                 onChange={() => onToggle(task.id)}
             />
@@ -46,7 +47,7 @@ function TaskItem({ task, onToggle, onDelete, onEdit }) {
                 />
             ) : (
                 <span
-                    className={task.completed ? styles.completed : ''}
+                    className={`${styles.text} ${task.completed ? styles.completed : ''}`}
                     onDoubleClick={handleEdit}
                     title="Double click to edit"
                 >
@@ -54,7 +55,7 @@ function TaskItem({ task, onToggle, onDelete, onEdit }) {
                 </span>
             )}
 
-            <button onClick={() => onDelete(task.id)}>Delete</button>
+            <button className={styles.deleteBtn} onClick={() => onDelete(task.id)}>Delete</button>
         </div>
     )
 }

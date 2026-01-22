@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import TaskInput from './components/TaskInput'   // <-- J'ai enlevé la répétition /TaskInput
-import TaskFilter from './components/TaskFilter' // <-- Pareil ici
-import TaskList from './components/TaskList'     // <-- Et ici
+import TaskInput from './components/TaskInput'
+import TaskFilter from './components/TaskFilter'
+import TaskList from './components/TaskList'
 import './index.css'
 
 function App() {
@@ -69,18 +69,9 @@ function App() {
       <h1>Task Manager</h1>
       <TaskInput onAddTask={addTask} />
 
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+      <div className="status-bar">
         <span>{activeCount} items left</span>
-        <button
-          onClick={clearCompleted}
-          style={{
-            background: 'none',
-            border: 'none',
-            color: '#888',
-            cursor: 'pointer',
-            textDecoration: 'underline'
-          }}
-        >
+        <button className="clear-btn" onClick={clearCompleted}>
           Clear Completed
         </button>
       </div>
