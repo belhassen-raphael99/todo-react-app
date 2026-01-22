@@ -1,0 +1,29 @@
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.button:hover {
+    background: #f0f0f0;
+}
+
+.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.active:hover {
+    background: #0056b3;
+}
