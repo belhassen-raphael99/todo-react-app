@@ -1,4 +1,22 @@
-# Task Manager App
+<p align="center">
+  <img src="docs/readme/app.jpg" alt="Task Manager — add, filter, complete, edit inline" width="78%">
+</p>
+
+<h1 align="center">Task Manager</h1>
+
+<p align="center">
+  <b>A small React exercise, done properly: one source of truth, presentational children, and state that survives a reload.</b><br>
+  <sub>React 19 · Vite · CSS Modules · no state library</sub>
+</p>
+
+<p align="center">
+  <img alt="React 19" src="https://img.shields.io/badge/React-19-20232a?style=flat-square&logo=react&logoColor=61dafb">
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-build-20232a?style=flat-square&logo=vite&logoColor=ffd028">
+  <img alt="No dependencies" src="https://img.shields.io/badge/state-useState%20%2B%20useEffect-20232a?style=flat-square">
+</p>
+
+---
+
 
 A robust, functional Task Manager application built with **React 19** and **Vite**. This project demonstrates modern React best practices, including functional components, hooks, unidirectional data flow, and persistent local storage.
 
